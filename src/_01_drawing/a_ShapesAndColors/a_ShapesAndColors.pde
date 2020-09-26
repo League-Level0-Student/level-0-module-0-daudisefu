@@ -1,25 +1,43 @@
+
+int x = 200;
+void setup (){
+  size (500, 500);
+
+ 
+  
+}
+
+void draw (){
+  
+   background(#5EA6AF);
+fill (#2445B9);
+rect(x, 200,200, 70);
+fill (#FA0D2C);
+ellipse (x + 30, 270, 50,40);
+ellipse (x + 150, 270, 50,40);
+  x = x - 5;
+  if (x < 0){
+   x = width; 
+  }
+}
+
+
+
+
 // 1. Run this empty program 
 // The grey square that appears has sides that are 100 pixels long
 
 // 2. Code a size command to make it big enough for your picture
-
+  
 //    The size command looks like this:      
-  size (600,600);
-
+  
 //    Try putting different numbers in the parentheses.
 //    See if you can figure out which number is the width, and which is the height
 
 
 // 3. Now add an ellipse command to draw a circle. An ellipse is like an oval.
 
-//    The ellipse command looks like this:
-fill(#DED080);
- ellipse(250,150, 250,200);
- fill(#71CBC0);
- ellipse(300,120, 50,60);
-  ellipse(170,120, 50,60);
-  fill(#D3E0E0);
-  rect(160,160,100,50);
+//    The ellipse command looks like t
 //    The first 2 numbers specify where to draw it. They are the x and y co-ordinates of the center of the ellipse.
 //    The third and fourth numbers are the size of the ellipse.
 //    The width is specified before the height. If they are the same, it draws a circle
@@ -28,6 +46,8 @@ fill(#DED080);
 // 4. Now add a rect command to draw a rectangle.
 
 //    The rect command looks like this:       
+
+
 //    Like the ellipse, the fist 2 numbers specify where to draw it, the other two are its size.
 //    The main difference is the x and y co-ordinates are the top left corner of the shape.
 //    If the width is the same as the height, it draws a square.
@@ -42,7 +62,7 @@ fill(#DED080);
 
 //    Paste the code for your selected color between the parentheses.
 //    It should now look something like this (the code will be different):   
-fill(#FFA850);
+
 
 // 6. The next shape you draw will be in the color you selected. 
 //    NOTE: You have to put the fill command with the color you want, 
